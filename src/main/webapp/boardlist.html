@@ -1,0 +1,102 @@
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' href='	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+  <header class="container-fluid bg-warning">
+    <div class="container">
+      <div class="pt-3">
+        <a href="/member_board" class="text-decoration-none">
+          <h1><span class="fs-2">더조은 아카데미</span> <span class="fs-6">AWS 클라우드 기반 자바&스프링&리액트 풀스택 개발자 양성</span></h1>
+        </a>
+      </div>
+      <nav class="navbar navbar-expand-sm">
+          <!-- Links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">홈</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">게시판</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">갤러리</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+ <main class="container p-3 pb-5">
+    <div class="card">
+      <div class="card-header p-5">
+        <h2>Board List</h2>
+      </div>
+      <div class="card-body">
+        <div class="clearfix mb-3">
+          <div class="float-start">
+          <select class="form-select">
+            <option>10개씩보기</option>
+            <option>25개씩보기</option>
+            <option>50개씩보기</option>
+          </select>
+          </div>
+
+          <div class="float-start mx-5">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search">
+              <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+          <a href="write" class="float-end btn btn-primary">write</a>
+        </div>
+
+        <div class="card">
+          <a href="view?bno=20" class="text-decoration-none">
+            <div class="container card-body border-bottom">
+              <div class="mb-4 text-truncate">java dao에서 테스트</div>
+              <div class="row text-muted small">
+                <div class="col-7">id1</div>
+                <div class="col text-end small"><span class="mr-3">2023-03-08 16:18:56</span> <span>조회수 0</span></div>
+              </div>
+            </div>
+          </a>
+          <a href="view?bno=20" class="text-decoration-none">
+            <div class="container card-body ">
+              <div class="mb-4 text-truncate">java dao에서 테스트 java dao에서 테스트java dao에서 테스트java dao에서 테스트java dao에서 테스트java dao에서 테스트java dao에서 테스트java dao에서 테스트</div>
+              <div class="row text-muted small">
+                <div class="col-7">id1</div>
+                <div class="col text-end small"><span class="mr-3">2023-03-08 16:18:56</span> <span>조회수 0</span></div>
+              </div>
+            </div>
+          </a>
+       </div>
+        <ul class="pagination mt-3 justify-content-center">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item"><a class="page-link active" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+
+      </div>
+    </div>
+  </main>
+ 
+  <footer class="container-fluid bg-warning p-5 text-center">
+    <address>copyright @ TJ academy</address>
+  </footer>
+</body>
+</html>
